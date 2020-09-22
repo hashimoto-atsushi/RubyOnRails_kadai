@@ -8,6 +8,7 @@
       <tr>
         <td><%= comment.content %></td>
         <td><%= link_to "詳細を見る", comment_path(comment.id) %></td>
+        <td><%= link_to "削除", comment_path(comment.id), method: :delete %></td>
       </tr>
       <% end %>
     </table>
