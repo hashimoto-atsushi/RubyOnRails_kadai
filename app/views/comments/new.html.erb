@@ -4,5 +4,10 @@
     <%= form.label :ツイート内容%>
     <%= form.text_area :content%>
   </div>
-  <%= form.submit "ツイート確認画面へ"%>
+  <div>
+    <%= form.submit "ツイート確認画面へ"%>
+  </div>
+  <div>
+    <%= link_to "ツイート一覧に戻る", comments_path %>
+  </div>
 <% end %>
