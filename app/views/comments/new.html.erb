@@ -1,8 +1,11 @@
 <%= form_with(model: @comment, local: true) do |form| %>
   <h2>ツイート新規作成</h2>
   <div class="field">
-    <%= form.label :ツイート内容%>
+    <%= form.label :"ツイート内容:"%>
+  </div>
+  <div>
     <%= form.text_area :content%>
+  </div>
   </div>
   <div>
     <%= form.submit "ツイート確認画面へ"%>

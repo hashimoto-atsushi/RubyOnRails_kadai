@@ -7,8 +7,9 @@
       <% @comments.each do |comment| %>
       <tr>
         <td><%= comment.content %></td>
+        <td><%= link_to "詳細を見る", comment_path(comment.id) %></td>
       </tr>
       <% end %>
     </table>
-    <%= link_to "新規作成画面へ", new_comment_path %>
+    <%= link_to "新規作成する", new_comment_path %>
 <% end %>

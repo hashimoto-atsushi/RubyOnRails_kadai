@@ -1,1 +1,12 @@
-
+<%= form_with(model: @comment, local: true) do |form| %>
+  <h2>ツイート詳細</h2>
+  <div class="field">
+    <%= form.label :"ツイート内容:" %>
+  </div>
+  <div>
+    <%= @comment.content%>
+  </div>    
+  <div>
+    <%= link_to "ツイート一覧に戻る", comments_path %>
+  </div>
+<% end %>
