@@ -1,0 +1,9 @@
+新規入力画面
+<%= form_with(model: @comment, local: true) do |form| %>
+  <h2>ツイート新規作成</h2>
+  <div class="field">
+    <%= form.label :ツイート内容%>
+    <%= form.text_area :content%>
+  </div>
+  <%= form.submit "ツイート確認画面へ"%>
+<% end %>

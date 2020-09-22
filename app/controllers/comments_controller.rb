@@ -3,6 +3,7 @@ class CommentsController < ApplicationController
   end
 
   def new
+    @comments = Comment.all
   end
 
   def edit
